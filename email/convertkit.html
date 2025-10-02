@@ -1,0 +1,184 @@
+<!-- ===================== TB&S Automation | ConvertKit HTML ===================== -->
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>TB&S Automation</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <style>
+      /* Many clients ignore head styles; everything important is inlined below. */
+      @media screen and (max-width:640px){
+        .wrapper{width:100% !important;}
+        .inner{padding:20px !important;}
+        .stack{display:block !important;width:100% !important;}
+        .btn{display:block !important;width:100% !important;}
+      }
+    </style>
+  </head>
+  <body style="margin:0; padding:0; background:#f8f6f5; -webkit-text-size-adjust:100%; -ms-text-size-adjust:100%;">
+    <center style="width:100%; background:#f8f6f5;">
+      <!-- preheader (hidden in most clients) -->
+      <div style="display:none; font-size:1px; color:#f8f6f5; line-height:1px; max-height:0; max-width:0; opacity:0; overflow:hidden;">
+        Dispatch → billing → invoicing, normalized data, and one-click actions. Steps are below (also in the TB&S workbook).
+      </div>
+
+      <!-- container -->
+      <table role="presentation" cellspacing="0" cellpadding="0" border="0" align="center" class="wrapper"
+             style="width:640px; max-width:640px; background:#ffffff; margin:0 auto; border-collapse:separate; border-radius:14px; overflow:hidden;">
+        <!-- header -->
+        <tr>
+          <td style="background:#9a5c46; padding:28px 24px; text-align:center;">
+            <!-- EDIT: use your preferred logo (dark for light bg). -->
+            <img src="https://pivotwithpower.s3.us-east-1.amazonaws.com/mye-biofiles/00-levelsetnextflamelogo.png" width="140" height="auto" alt="TB&S"
+                 style="display:block; margin:0 auto 10px; border:0; outline:none;">
+            <div style="font-family:Arial,Helvetica,sans-serif; font-size:22px; line-height:28px; color:#ffffff; font-weight:bold;">
+              TB&amp;S Automation — How to Use &amp; Quick Wins
+            </div>
+          </td>
+        </tr>
+
+        <!-- intro -->
+        <tr>
+          <td class="inner" style="padding:28px; font-family:Arial,Helvetica,sans-serif; color:#261418;">
+            <p style="margin:0 0 14px; font-size:16px; line-height:24px;">
+              We’ve implemented an automation that connects <strong>dispatch → billing → invoicing</strong> using Google Sheets + Apps Script.
+              Dispatchers enter loads once; normalized data flows to billing and invoices in a few clicks.
+            </p>
+            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%"
+                   style="background:#fff3ec; border:1px solid #e1b99a; border-radius:10px; margin:10px 0 20px;">
+              <tr>
+                <td style="padding:14px 16px; font-family:Arial,Helvetica,sans-serif; color:#261418;">
+                  <div style="font-weight:bold; margin-bottom:6px;">Potential ROI (benchmarks you can refine):</div>
+                  <ul style="padding-left:18px; margin:0;">
+                    <li style="margin:6px 0;">Save <strong>5–10 minutes per load</strong> (no re-entry).</li>
+                    <li style="margin:6px 0;">Reduce invoice errors by <strong>30–60%</strong> via protected totals &amp; validation.</li>
+                    <li style="margin:6px 0;">Cut invoice cycle time by <strong>25–40%</strong>; possible <strong>DSO reduction 1–2 days</strong>.</li>
+                  </ul>
+                </td>
+              </tr>
+            </table>
+
+            <!-- why this matters -->
+            <p style="margin:0 0 6px; font-size:15px; line-height:22px;">
+              <strong>Problem we solved:</strong> duplicate data entry across dispatch, tracking, and invoicing caused delays and errors.
+            </p>
+            <p style="margin:0 0 18px; font-size:15px; line-height:22px;">
+              <strong>What you get:</strong> a formula-driven <em>Export</em> (real-time), a <em>TB&amp;S</em> menu for one-click actions,
+              and protected invoice templates. See the steps below (also shown inside the TB&amp;S/About workbook).
+            </p>
+
+            <!-- How to Use (two stacked cards) -->
+            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="margin:0 0 16px;">
+              <tr>
+                <td class="stack" style="width:100%; vertical-align:top;">
+
+                  <!-- Dispatcher card -->
+                  <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%"
+                         style="border:1px solid #e8d4c6; border-radius:12px; margin-bottom:14px;">
+                    <tr>
+                      <td style="background:#f6e2d2; padding:12px 16px; font-family:Arial,Helvetica,sans-serif; color:#261418; font-weight:bold;">
+                        Dispatcher — Daily
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="padding:12px 16px; font-family:Arial,Helvetica,sans-serif; color:#261418; font-size:14px; line-height:21px;">
+                        <ol style="margin:0; padding-left:18px;">
+                          <li>Open <strong>Shared Dispatch → Working</strong> and update loads.</li>
+                          <li><strong>Export</strong> updates automatically via formulas.</li>
+                          <li>Audit: check <strong>Export</strong> has Y: “Last Updated” and <strong>Z1</strong> timestamp.</li>
+                        </ol>
+                      </td>
+                    </tr>
+                  </table>
+
+                  <!-- Tracker/Biller card -->
+                  <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%"
+                         style="border:1px solid #e8d4c6; border-radius:12px;">
+                    <tr>
+                      <td style="background:#f6e2d2; padding:12px 16px; font-family:Arial,Helvetica,sans-serif; color:#261418; font-weight:bold;">
+                        Tracker / Biller — Happy Path
+                      </td>
+                    </tr>
+                    <tr>
+                      <td style="padding:12px 16px; font-family:Arial,Helvetica,sans-serif; color:#261418; font-size:14px; line-height:21px;">
+                        <ol style="margin:0; padding-left:18px;">
+                          <li>In the <strong>TB&amp;S</strong> sheet’s menu: <strong>Clone Template</strong> (targets any prior month's template).</li>
+                          <li>Click <strong>Sync From Dispatch</strong> to fetch the latest dispatcher data.</li>
+                          <li><em>If needed</em>, ask Admin to run <strong>Apply Validations</strong> on affected ranges.</li>
+                          <li>Click <strong>Create Invoices</strong>, then review protected totals/headers and export/share.</li>
+                        </ol>
+                      </td>
+                    </tr>
+                  </table>
+
+                </td>
+              </tr>
+            </table>
+
+            <!-- Operational workbooks (buttons) -->
+            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="margin:18px 0 6px;">
+              <tr>
+                <td style="font-family:Arial,Helvetica,sans-serif; font-size:15px; color:#261418; font-weight:bold; padding-bottom:10px;">
+                  Access the operational workbooks
+                </td>
+              </tr>
+              <!-- Three buttons stacked (mobile friendly) -->
+              <tr>
+                <td style="padding-bottom:10px;">
+                  <!-- EDIT: replace hrefs with the proper workbook URLs if needed -->
+                  <a class="btn" href="https://docs.google.com/spreadsheets/d/1ke0ILFUkq8uwbMapm6NAPBoUXYSgsf_t85imQlQedAM/edit?usp=sharing" target="_blank"
+                     style="background:#9a5c46; color:#ffffff; text-decoration:none; display:inline-block; padding:12px 18px; border-radius:8px; font-family:Arial,Helvetica,sans-serif; font-size:14px;">
+                    Open Workbook 1 (Dispatch/Export)
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding-bottom:10px;">
+                  <a class="btn" href="https://docs.google.com/spreadsheets/d/1ZyLIDlFM7cV6txxHNp7PT8KGFxv689093qfHHDYn814/edit?usp=sharing" target="_blank"
+                     style="background:#9a5c46; color:#ffffff; text-decoration:none; display:inline-block; padding:12px 18px; border-radius:8px; font-family:Arial,Helvetica,sans-serif; font-size:14px;">
+                    Open Workbook 2 (Delivery Schedule)
+                  </a>
+                </td>
+              </tr>
+              <tr>
+                <td style="padding-bottom:4px;">
+                  <a class="btn" href="https://docs.google.com/spreadsheets/d/1vNjSvLf7KpJ2lWTiJfBBpRrAduevIugi5_0NlNo046g/edit?usp=sharing" target="_blank"
+                     style="background:#9a5c46; color:#ffffff; text-decoration:none; display:inline-block; padding:12px 18px; border-radius:8px; font-family:Arial,Helvetica,sans-serif; font-size:14px;">
+                    Open Workbook 3 (Invoice Master)
+                  </a>
+                </td>
+              </tr>
+            </table>
+
+            <!-- Docs site -->
+            <table role="presentation" cellspacing="0" cellpadding="0" border="0" width="100%" style="margin:18px 0 6px;">
+              <tr>
+                <td style="padding-top:6px; text-align:center;">
+                  <!-- EDIT: your docs/landing page -->
+                  <a href="http://tbsautomation.s3-website.us-east-2.amazonaws.com" target="_blank"
+                     style="background:#261418; color:#ffffff; text-decoration:none; display:inline-block; padding:12px 20px; border-radius:8px; font-family:Arial,Helvetica,sans-serif; font-size:14px;">
+                    View the TB&amp;S Docs Site
+                  </a>
+                </td>
+              </tr>
+            </table>
+
+            <!-- Footer note -->
+            <p style="margin:18px 0 0; font-size:13px; line-height:20px; color:#5b4a4f;">
+              The instructions above are also posted inside the TBS Delivery Schedule workbook (TB&amp;S / About sheet). A short video tutorial is coming soon.
+            </p>
+          </td>
+        </tr>
+
+      
+        <!-- footer -->
+<tr>
+  <td style="background:#f0e1d7; padding:16px 24px; text-align:center;">
+    <div style="font-family:Arial,Helvetica,sans-serif; font-size:12px; color:#6f5b56;">
+      Need help? Reply to this email or call <strong>(678) 870-8341</strong>.<br>
+      <span style="display:inline-block; margin-top:8px;">
+        {{ unsubscribe_link }}
+      </span>
+    </div>
+  </td>
+</tr>
