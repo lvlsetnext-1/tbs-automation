@@ -1,1 +1,149 @@
-https://tbsautomation.s3.us-east-2.amazonaws.com/tbsautomation.html
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>TB&S Automation — Phase 1</title>
+  <style>
+    :root{ --ink:#261418; --clay:#9a5c46; --rose:#cb927c; --sand:#e1b99a; --white:#ffffff; }
+    *{box-sizing:border-box}
+    html,body{margin:0;padding:0;background:var(--sand);color:var(--ink);font:15.5px/1.6 ui-sans-serif,system-ui,"Segoe UI",Roboto,Ubuntu,Arial}
+    a{color:var(--clay);text-decoration:none}
+    .nav{background:var(--ink);color:#fff}
+    .nav-inner{max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;padding:.8rem 1rem}
+    .brand{display:flex;align-items:center;gap:.6rem;font-weight:700}
+    .brand img{height:26px}
+    .tag{display:inline-block;background:rgba(203,146,124,.15);color:#fff;padding:.25rem .6rem;border-radius:999px;font-size:.72rem;border:1px solid rgba(255,255,255,.2)}
+    .hero{background:linear-gradient(180deg,rgba(38,20,24,.96),rgba(38,20,24,.96)); color:#fff; padding:3rem 0}
+    .container{max-width:1200px;margin:0 auto;padding:1.5rem 1rem}
+    .hero h1{margin:0 0 .5rem 0;font-size:1.9rem}
+    .hero p{margin:.2rem 0 1rem 0;max-width:760px;opacity:.92;font-size:1rem}
+    .btns{display:flex;gap:.6rem;flex-wrap:wrap}
+    .btn{display:inline-flex;align-items:center;gap:.5rem;padding:.7rem 1rem;border-radius:12px;border:1px solid rgba(255,255,255,.22);font-weight:600}
+    .btn.primary{background:var(--clay);border-color:transparent;color:#fff}
+    .btn.secondary{background:transparent;color:#fff}
+    .section-kicker{text-transform:uppercase;letter-spacing:.18em;font-size:.72rem;color:var(--clay);font-weight:700}
+    .muted{opacity:.85}
+    .sep{height:1px;background:rgba(0,0,0,.08);margin:1.5rem 0}
+    .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1rem}
+    .card{background:#fff;border:1px solid rgba(0,0,0,.06);border-radius:16px;padding:1rem;display:flex;flex-direction:column;gap:.6rem;min-height:160px}
+    .card h3{margin:.1rem 0;font-size:1rem}
+    .doc-link{margin-top:auto;display:inline-flex;align-items:center;justify-content:space-between;padding:.7rem .9rem;border-radius:12px;border:1px solid rgba(0,0,0,.08);background:#fff}
+    .well{background:#fff;border:1px solid rgba(0,0,0,.06);border-radius:16px;padding:1rem}
+    .list-clean{list-style:none;margin:0;padding:0;display:grid;gap:.5rem}
+    .chip{display:inline-flex;align-items:center;gap:.5rem;padding:.35rem .6rem;border-radius:999px;background:rgba(154,92,70,.1);border:1px solid rgba(154,92,70,.25);font-size:.82rem}
+    .footer{padding:1.25rem 0;color:#fff;background:var(--ink)}
+  </style>
+</head>
+<body>
+  <nav class="nav">
+    <div class="nav-inner">
+      <div class="brand">
+        <img src="https://pivotwithpower.s3.us-east-1.amazonaws.com/mye-biofiles/00-levelsetnextflamelogowhite.png" alt="Level Set Next flame logo">
+        <span>TB&S Automation</span>
+      </div>
+      <span class="tag">Phase 1</span>
+    </div>
+  </nav>
+
+  <header class="hero">
+    <div class="container">
+      <h1>Fewer clicks. Fewer errors. Faster dispatch.</h1>
+      <p>TB&amp;S Automation (Phase 1) streamlines monthly workflows in Google Sheets with Apps Script: live dispatch sync, wide data validation, robust carry-over, and one‑click fixes.</p>
+      <div class="btns">
+        <a class="btn primary" href="#docs">View Docs</a>
+        <a class="btn secondary" href="#workbooks">Core Workbooks</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="overview">
+      <div class="well">
+        <p class="section-kicker">Overview</p>
+        <h2 style="margin:.2rem 0 1rem 0;">What shipped in Phase 1</h2>
+        <ul class="list-clean">
+          <li class="chip">Dispatch_Live import + sync</li>
+          <li class="chip">Bulk dropdown validation (5–10k rows)</li>
+          <li class="chip">Carry‑over logic across periods</li>
+          <li class="chip">Menu actions for one‑click maintenance</li>
+          <li class="chip">Invoice creation guardrails & fixes</li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="sep"></div>
+
+    <section id="docs">
+      <p class="section-kicker">Project Deliverables</p>
+      <h2 style="margin:.2rem 0 1rem 0;">Phase 1 Documentation & Guides</h2>
+      <p class="muted" style="margin:-.6rem 0 1.2rem 0;">Audience-specific guides for deployers, operators, and managers.</p>
+      <div class="cards">
+        <article class="card">
+          <h3>Implementation Guide</h3>
+          <p class="muted">Deployment instructions, setup notes, environments, troubleshooting.</p>
+          <a class="doc-link" target="_blank" rel="noopener" href="https://tbsautomation.s3.us-east-2.amazonaws.com/tbs-files/TBS-Implementation-Guide-Phase+1.docx.pdf">Open →</a>
+        </article>
+        <article class="card">
+          <h3>User Guide</h3>
+          <p class="muted">Operations, validations, carry‑over, and issue resolution.</p>
+          <a class="doc-link" target="_blank" rel="noopener" href="https://tbsautomation.s3.us-east-2.amazonaws.com/tbs-files/TBS-User-Guide-Phase+1.pdf">Open →</a>
+        </article>
+        <article class="card">
+          <h3>System Overview</h3>
+          <p class="muted">Architecture, data flows, and core Apps Script logic.</p>
+          <a class="doc-link" target="_blank" rel="noopener" href="https://tbsautomation.s3.us-east-2.amazonaws.com/tbs-files/TBS-System-Overview-Phase+1.pdf">Open →</a>
+        </article>
+        <article class="card">
+          <h3>Runbook (Ops)</h3>
+          <p class="muted">Daily health checks and month‑end procedures.</p>
+          <a class="doc-link" target="_blank" rel="noopener" href="https://tbsautomation.s3.us-east-2.amazonaws.com/tbs-files/TBS-Runbook-Ops-Phase+1.pdf">Open →</a>
+        </article>
+        <article class="card">
+          <h3>Release Notes</h3>
+          <p class="muted">Changes, fixes, and improvements by version.</p>
+          <a class="doc-link" target="_blank" rel="noopener" href="https://tbsautomation.s3.us-east-2.amazonaws.com/tbs-files/TBS-Release-Notes-v1.0-Phase+1.pdf">Open →</a>
+        </article>
+        <article class="card">
+          <h3>Support & SLA</h3>
+          <p class="muted">Contacts, service levels, and escalation paths.</p>
+          <a class="doc-link" target="_blank" rel="noopener" href="https://tbsautomation.s3.us-east-2.amazonaws.com/tbs-files/TBS-Support-SLA-Phase+1.pdf">Open →</a>
+        </article>
+      </div>
+    </section>
+
+    <div class="sep"></div>
+
+    <section id="workbooks">
+      <p class="section-kicker">Core Workbooks</p>
+      <h2 style="margin:.2rem 0 1rem 0;">Operational Deliverables</h2>
+      <p class="muted" style="margin:-.6rem 0 1.2rem 0;">Production workbooks used by dispatch operations.</p>
+      <div class="cards">
+        <article class="card">
+          <h3>Shared Dispatch Load Tracker – Automated</h3>
+          <p class="muted">Operator workspace with validations and menu actions.</p>
+          <a class="doc-link" target="_blank" rel="noopener" href="https://docs.google.com/spreadsheets/d/1ke0ILFUkq8uwbMapm6NAPBoUXYSgsf_t85imQlQedAM/edit?usp=sharing">Open Workbook →</a>
+        </article>
+        <article class="card">
+          <h3>TB&S Delivery Schedule – Automated</h3>
+          <p class="muted">Monthly tracker with carry‑over logic.</p>
+          <a class="doc-link" target="_blank" rel="noopener" href="https://docs.google.com/spreadsheets/d/1ZyLIDlFM7cV6txxHNp7PT8KGFxv689093qfHHDYn814/edit?usp=sharing">Open Workbook →</a>
+        </article>
+        <article class="card">
+          <h3>Invoice Master Workbook – Automated</h3>
+          <p class="muted">Invoice template + mapped outputs.</p>
+          <a class="doc-link" target="_blank" rel="noopener" href="https://docs.google.com/spreadsheets/d/1vNjSvLf7KpJ2lWTiJfBBpRrAduevIugi5_0NlNo046g/edit?usp=sharing">Open Workbook →</a>
+        </article>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container" style="display:flex;align-items:center;justify-content:space-between;gap:1rem;flex-wrap:wrap">
+      <div>© 2025 Level Set Next. All rights reserved.</div>
+      <div class="muted">(678) 870‑8341</div>
+    </div>
+  </footer>
+</body>
+</html>
+
