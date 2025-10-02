@@ -3,7 +3,8 @@
 Phase-1 TB&S automation: normalize dispatch data and generate invoices from a control sheet—documentation, runbook, and support included.
 
 ## Live site (GitHub Pages)
-When enabled: `https://<YOUR_GITHUB_USERNAME>.github.io/tbs-automation/`
+Live site: https://lvlsetnext-1.github.io/tbs-automation/
+Short link: https://bit.ly/48Lttrt
 
 ## Operational workbooks (production)
 - **Shared Dispatch (Export):** https://docs.google.com/spreadsheets/d/1ke0ILFUkq8uwbMapm6NAPBoUXYSgsf_t85imQlQedAM/edit?usp=sharing
